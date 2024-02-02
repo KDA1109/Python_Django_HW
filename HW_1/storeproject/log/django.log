@@ -1,0 +1,5 @@
+Watching for file changes with StatReloader
+15:17:51 Открыта страница "О создателе"
+"GET /about_page HTTP/1.1" 200 2557
+15:17:56 Открыта главная страница
+"GET /home_page HTTP/1.1" 200 2181
