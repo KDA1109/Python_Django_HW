@@ -1,0 +1,170 @@
+Watching for file changes with StatReloader
+15:17:51 Открыта страница "О создателе"
+"GET /about_page HTTP/1.1" 200 2557
+15:17:56 Открыта главная страница
+"GET /home_page HTTP/1.1" 200 2181
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2235
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2286
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 12, in clients
+    all_clients = Клиент.objects.all()
+                  ^^^^^^
+NameError: name 'Клиент' is not defined
+"GET /clients HTTP/1.1" 500 65079
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: storeapp_client
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 16, in clients
+    'Имя': [client.Имя for client in all_clients],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: storeapp_client
+"GET /clients HTTP/1.1" 500 127725
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2235
+"GET /clients HTTP/1.1" 200 312
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 312
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 330
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /products HTTP/1.1" 200 322
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /products HTTP/1.1" 200 322
+"GET /clients HTTP/1.1" 200 330
+Not Found: /orders
+"GET /orders HTTP/1.1" 404 2443
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /orders
+"GET /orders HTTP/1.1" 404 2443
+Not Found: /orders
+"GET /orders HTTP/1.1" 404 2443
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /orders HTTP/1.1" 200 310
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 1287
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 1287
+Watching for file changes with StatReloader
+Internal Server Error: /orders
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 61, in orders
+    'ID': [order.order_id for order in all_orders],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 61, in <listcomp>
+    'ID': [order.order_id for order in all_orders],
+           ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'order_id'
+"GET /orders HTTP/1.1" 500 69693
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /orders HTTP/1.1" 200 632
+"GET /clients HTTP/1.1" 200 1477
