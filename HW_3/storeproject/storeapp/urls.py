@@ -1,0 +1,11 @@
+from django.contrib import admin
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path('', views.clients, name='clients'),
+    path('products/', views.products, name='products'),
+    path('orders/', views.orders, name='orders'),
+    path('client_orders/<int:client_id>/', views.client_orders, name='client_orders'),
+]
