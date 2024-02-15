@@ -1,0 +1,1946 @@
+Watching for file changes with StatReloader
+15:17:51 Открыта страница "О создателе"
+"GET /about_page HTTP/1.1" 200 2557
+15:17:56 Открыта главная страница
+"GET /home_page HTTP/1.1" 200 2181
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2235
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2286
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 12, in clients
+    all_clients = Клиент.objects.all()
+                  ^^^^^^
+NameError: name 'Клиент' is not defined
+"GET /clients HTTP/1.1" 500 65079
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: storeapp_client
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 16, in clients
+    'Имя': [client.Имя for client in all_clients],
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 398, in __iter__
+    self._fetch_all()
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1926, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 328, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: storeapp_client
+"GET /clients HTTP/1.1" 500 127725
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2235
+"GET /clients HTTP/1.1" 200 312
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 312
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 330
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /products HTTP/1.1" 200 322
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /products HTTP/1.1" 200 322
+"GET /clients HTTP/1.1" 200 330
+Not Found: /orders
+"GET /orders HTTP/1.1" 404 2443
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /orders
+"GET /orders HTTP/1.1" 404 2443
+Not Found: /orders
+"GET /orders HTTP/1.1" 404 2443
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /orders HTTP/1.1" 200 310
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 1287
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /clients HTTP/1.1" 200 1287
+Watching for file changes with StatReloader
+Internal Server Error: /orders
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 61, in orders
+    'ID': [order.order_id for order in all_orders],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 61, in <listcomp>
+    'ID': [order.order_id for order in all_orders],
+           ^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'order_id'
+"GET /orders HTTP/1.1" 500 69693
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /orders HTTP/1.1" 200 632
+"GET /clients HTTP/1.1" 200 1477
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2575
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 29, in clients
+    return render(request, "storeapp/all_clients.html", table_html)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/all_clients.html
+"GET /clients HTTP/1.1" 500 92903
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 29, in clients
+    return render(request, "storeapp/all_clients.html", all_clients)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/all_clients.html
+"GET /clients HTTP/1.1" 500 81471
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 29, in clients
+    return render(request, "storeapp/all_clients.html", all_clients)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/all_clients.html
+"GET /clients HTTP/1.1" 500 81471
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 35, in clients
+    return render(request, "storeapp/all_clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/all_clients.html
+"GET /clients HTTP/1.1" 500 82001
+Internal Server Error: /clients
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 35, in clients
+    return render(request, "storeapp/all_clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/all_clients.html
+"GET /clients HTTP/1.1" 500 82001
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2405
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2188, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1856, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 32, in clients
+    df = pd.DataFrame(list(all_clients.values('id', 'Name', 'Email', 'Phone Number', 'Address', 'Registration Date')))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1358, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone.query.set_values(fields)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2491, in set_values
+    self.add_fields(field_names, True)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2216, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+"GET / HTTP/1.1" 500 105218
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2188, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1856, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 32, in clients
+    df = pd.DataFrame(list(all_clients.values('id', 'Name', 'Email', 'Phone Number', 'Address', 'Registration Date')))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1358, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone.query.set_values(fields)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2491, in set_values
+    self.add_fields(field_names, True)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2216, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+"GET / HTTP/1.1" 500 105216
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2188, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1856, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 32, in clients
+    df = pd.DataFrame(list(all_clients.values('id', 'Name', 'Email', 'Phone Number', 'Address', 'Registration Date')))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1358, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone.query.set_values(fields)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2491, in set_values
+    self.add_fields(field_names, True)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2216, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+"GET / HTTP/1.1" 500 105216
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2188, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1856, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 32, in clients
+    df = pd.DataFrame(list(all_clients.values('id', 'Name', 'Email', 'Phone Number', 'Address', 'Registration Date')))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1358, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone.query.set_values(fields)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2491, in set_values
+    self.add_fields(field_names, True)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2216, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Name' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+"GET / HTTP/1.1" 500 105079
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2188, in add_fields
+    join_info = self.setup_joins(
+                ^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1856, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+                                       ^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 1761, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Phone Number' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 32, in clients
+    df = pd.DataFrame(list(all_clients.values('id', 'name', 'email', 'Phone Number', 'Address', 'Registration Date')))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1358, in values
+    clone = self._values(*fields, **expressions)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\query.py", line 1353, in _values
+    clone.query.set_values(fields)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2491, in set_values
+    self.add_fields(field_names, True)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\db\models\sql\query.py", line 2216, in add_fields
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'Phone Number' into field. Choices are: address, email, id, name, order, phone_number, registration_date
+"GET / HTTP/1.1" 500 105502
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 586
+"GET / HTTP/1.1" 200 2404
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/all_clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 670, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: clients_df.to_html|(classes="table table-striped")||safe
+"GET / HTTP/1.1" 500 169042
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/all_clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 670, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: clients_df.to_html|(classes="table table-striped")||safe
+"GET / HTTP/1.1" 500 169042
+"GET / HTTP/1.1" 200 213
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/all_clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 670, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: clients_df.to_html|(classes="table table-striped")| | safe
+"GET / HTTP/1.1" 500 169070
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/all_clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 196, in compile_nodelist
+    return parser.parse()
+           ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 295, in do_extends
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 510, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 508, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 234, in do_block
+    nodelist = parser.parse(("endblock",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 481, in parse
+    raise self.error(token, e)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 479, in parse
+    filter_expression = self.compile_filter(token.contents)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 597, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 670, in __init__
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: Could not parse some characters: clients_df.to_html|(classes="table table-striped")| | safe
+"GET / HTTP/1.1" 500 169070
+"GET / HTTP/1.1" 200 863
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 1690
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 220
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2621
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_details' not found. 'client_details' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 174666
+"GET / HTTP/1.1" 200 2430
+"GET / HTTP/1.1" 200 2475
+"GET / HTTP/1.1" 200 2451
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_orders' not found. 'client_orders' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 174700
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_orders' not found. 'client_orders' is not a valid view function or pattern name.
+"GET / HTTP/1.1" 500 174700
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_orders' with arguments '(1,)' not found. 1 pattern(s) tried: ['client_orders/\\Z']
+"GET / HTTP/1.1" 500 176116
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_orders' with arguments '(1,)' not found. 1 pattern(s) tried: ['client_orders/\\Z']
+"GET / HTTP/1.1" 500 176116
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_orders' with arguments '(1,)' not found. 1 pattern(s) tried: ['client_orders/\\Z']
+"GET / HTTP/1.1" 500 176415
+Internal Server Error: /
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 38, in clients
+    return render(request, "storeapp/clients.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 1000, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 241, in render
+    nodelist.append(node.render_annotated(context))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\base.py", line 961, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 478, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\urls\resolvers.py", line 848, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'client_orders' with arguments '(1,)' not found. 1 pattern(s) tried: ['client_orders/\\Z']
+"GET / HTTP/1.1" 500 176415
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3135
+Internal Server Error: /client_orders/1/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 99, in client_orders
+    return render(request, 'storeapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/client_orders.html
+"GET /client_orders/1/ HTTP/1.1" 500 80534
+Internal Server Error: /client_orders/2/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 99, in client_orders
+    return render(request, 'storeapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/client_orders.html
+"GET /client_orders/2/ HTTP/1.1" 500 80534
+Internal Server Error: /client_orders/3/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 99, in client_orders
+    return render(request, 'storeapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/client_orders.html
+"GET /client_orders/3/ HTTP/1.1" 500 80534
+Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 99, in client_orders
+    return render(request, 'storeapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/client_orders.html
+"GET /client_orders/4/ HTTP/1.1" 500 80790
+Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 99, in client_orders
+    return render(request, 'storeapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/client_orders.html
+"GET /client_orders/4/ HTTP/1.1" 500 80790
+Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 99, in client_orders
+    return render(request, 'storeapp/client_orders.html', context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: storeapp/client_orders.html
+"GET /client_orders/4/ HTTP/1.1" 500 80790
+"GET /client_orders/4/ HTTP/1.1" 200 1014
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /client_orders/4/ HTTP/1.1" 200 1014
+"GET /client_orders/4/ HTTP/1.1" 200 1014
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /client_orders/4/ HTTP/1.1" 200 1014
+"GET /client_orders/4/ HTTP/1.1" 200 1014
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 3135
+"GET / HTTP/1.1" 200 2663
+"GET /products HTTP/1.1" 301 0
+"GET /products/ HTTP/1.1" 200 643
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /products/ HTTP/1.1" 200 1253
+"GET / HTTP/1.1" 200 2648
+"GET /client_orders/4/ HTTP/1.1" 200 1014
+"GET /client_orders/4/ HTTP/1.1" 200 1012
+"GET /client_orders/4/ HTTP/1.1" 200 1012
+Watching for file changes with StatReloader
+"GET /client_orders/4/ HTTP/1.1" 200 1028
+"GET / HTTP/1.1" 200 2648
+"GET /client_orders/4/ HTTP/1.1" 200 1028
+"GET /client_orders/4/ HTTP/1.1" 200 1201
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /client_orders/4/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 97, in client_orders
+    product = Product.objects.get(pk=product_id)
+                                     ^^^^^^^^^^
+NameError: name 'product_id' is not defined
+"GET /client_orders/4/ HTTP/1.1" 500 65733
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /client_orders/4/ HTTP/1.1" 200 1203
+"GET /client_orders/4/ HTTP/1.1" 200 1161
+"GET /client_orders/4/ HTTP/1.1" 200 1161
+"GET /client_orders/4/ HTTP/1.1" 200 1203
+"GET /client_orders/4/ HTTP/1.1" 200 1161
+"GET /client_orders/4/ HTTP/1.1" 200 1161
+"GET /client_orders/4/ HTTP/1.1" 200 1203
+Watching for file changes with StatReloader
+"GET /client_orders/4/ HTTP/1.1" 200 1474
+"GET /client_orders/4/ HTTP/1.1" 200 1465
+"GET /client_orders/4/ HTTP/1.1" 200 1465
+"GET /client_orders/4/ HTTP/1.1" 200 1465
+"GET /client_orders/4/ HTTP/1.1" 200 1494
+"GET /client_orders/4/ HTTP/1.1" 200 1510
+"GET /client_orders/4/ HTTP/1.1" 200 1509
+"GET /client_orders/4/ HTTP/1.1" 200 1509
+Watching for file changes with StatReloader
+"GET /client_orders/4/ HTTP/1.1" 200 1165
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2648
+"GET / HTTP/1.1" 200 2648
+"GET /client_orders/5/ HTTP/1.1" 200 1618
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2648
+"GET /client_orders/2/ HTTP/1.1" 200 2386
+"GET /client_orders/2/ HTTP/1.1" 200 2410
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2648
+"GET /orders HTTP/1.1" 301 0
+"GET /orders/ HTTP/1.1" 200 3598
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /orders/ HTTP/1.1" 200 5812
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 69, in orders
+    client = Client.objects.get(pk=client_id)
+                                   ^^^^^^^^^
+NameError: name 'client_id' is not defined
+"GET /orders/ HTTP/1.1" 500 65296
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 69, in orders
+    client = Client.objects.get(pk=client_id)
+                                   ^^^^^^^^^
+NameError: name 'client_id' is not defined
+"GET /orders/ HTTP/1.1" 500 65296
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 69, in orders
+    client = Client.objects.get(pk=client_id)
+                                   ^^^^^^^^^
+NameError: name 'client_id' is not defined
+"GET /orders/ HTTP/1.1" 500 65296
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 69, in orders
+    client = Client.objects.get(pk=client_id)
+                                   ^^^^^^^^^
+NameError: name 'client_id' is not defined
+"GET /orders/ HTTP/1.1" 500 65296
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /orders/ HTTP/1.1" 200 5812
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2648
+"GET / HTTP/1.1" 200 2648
+"GET /client_orders/1/ HTTP/1.1" 200 10096
+"GET /client_orders/1/ HTTP/1.1" 200 10412
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 10412
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 901
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 901
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 10585
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 10585
+Watching for file changes with StatReloader
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 10589
+Watching for file changes with StatReloader
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 10702
+Watching for file changes with StatReloader
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 10922
+Watching for file changes with StatReloader
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 11039
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 11039
+"GET /client_orders/1/ HTTP/1.1" 200 11039
+Watching for file changes with StatReloader
+"GET /client_orders/1/ HTTP/1.1" 200 11039
+Watching for file changes with StatReloader
+"GET /client_orders/1/ HTTP/1.1" 200 11039
+Watching for file changes with StatReloader
+"GET /client_orders/1/ HTTP/1.1" 200 11039
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 6753
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 9008
+"GET /client_orders/1/ HTTP/1.1" 200 11039
+Watching for file changes with StatReloader
+"GET /client_orders/1/ HTTP/1.1" 200 11264
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 6302
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /client_orders/1/ HTTP/1.1" 200 11264
+"GET /client_orders/1/?period=365 HTTP/1.1" 200 10588
+"GET /client_orders/1/?period=365 HTTP/1.1" 200 10588
+"GET /client_orders/1/?period=30 HTTP/1.1" 200 8557
+"GET /client_orders/1/?period=7 HTTP/1.1" 200 6302
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2648
+"GET /product_up HTTP/1.1" 301 0
+Internal Server Error: /product_up/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: update_product() missing 1 required positional argument: 'product_id'
+"GET /product_up/ HTTP/1.1" 500 62306
+Not Found: /product_up/2
+"GET /product_up/2 HTTP/1.1" 404 3010
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /product_up/2 HTTP/1.1" 301 0
+"GET /product_up/2/ HTTP/1.1" 200 1243
+"GET /product_up/2/ HTTP/1.1" 200 1243
+"GET /product_up/2/ HTTP/1.1" 200 540
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Not Found: /product_up/
+"GET /product_up/ HTTP/1.1" 404 3030
+Watching for file changes with StatReloader
+Not Found: /product_up/
+"GET /product_up/ HTTP/1.1" 404 3030
+Not Found: /product_up/
+"GET /product_up/ HTTP/1.1" 404 3030
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /product_up/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: update_product() missing 1 required positional argument: 'product_id'
+"GET /product_up/ HTTP/1.1" 500 62443
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /product_up/ HTTP/1.1" 200 2511
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /product_up/ HTTP/1.1" 200 2568
+"GET /product_up/ HTTP/1.1" 200 2568
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /product_up/ HTTP/1.1" 200 2568
+"GET /product_up/ HTTP/1.1" 200 2568
+"GET /product_up/ HTTP/1.1" 200 2568
+"GET /product_up/ HTTP/1.1" 200 2568
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /product_up/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 140, in update_product
+    return render(request, 'update_product.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: update_product.html
+"GET /product_up/ HTTP/1.1" 500 80900
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /product_up/ HTTP/1.1" 200 2568
+"GET /product_up/ HTTP/1.1" 200 2568
+Internal Server Error: /product_up/
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 128, in update_product
+    product_id = form.cleaned_data['product'].id
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'product'
+"POST /product_up/ HTTP/1.1" 500 67578
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /product_up/ HTTP/1.1" 200 2690
+"POST /product_up/ HTTP/1.1" 200 2741
+"POST /product_up/ HTTP/1.1" 200 2792
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET / HTTP/1.1" 200 2648
+Internal Server Error: /product_up/25
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 137, in update_product
+    return render(request, 'update_product.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: update_product.html
+"GET /product_up/25 HTTP/1.1" 500 81523
+Internal Server Error: /product_up/25
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 137, in update_product
+    return render(request, 'update_product.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: update_product.html
+"GET /product_up/25 HTTP/1.1" 500 81660
+Not Found: /product_up/
+"GET /product_up/ HTTP/1.1" 404 3029
+Internal Server Error: /product_up/10
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 137, in update_product
+    return render(request, 'update_product.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: update_product.html
+"GET /product_up/10 HTTP/1.1" 500 81523
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /product_up/10
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 137, in update_product
+    return render(request, 'update_product.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: update_product.html
+"GET /product_up/10 HTTP/1.1" 500 81627
+Internal Server Error: /product_up/10
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 137, in update_product
+    return render(request, 'update_product.html', {'form': form})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: update_product.html
+"GET /product_up/10 HTTP/1.1" 500 81627
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /product_up/25 HTTP/1.1" 200 1241
+"POST /product_up/25 HTTP/1.1" 200 1243
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1449
+Not Found: /product_image.jpg
+"GET /product_image.jpg HTTP/1.1" 404 3047
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1449
+"POST /product_up/25 HTTP/1.1" 200 1449
+"POST /product_up/25 HTTP/1.1" 200 1449
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1455
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1455
+Watching for file changes with StatReloader
+Internal Server Error: /product_up/25
+Traceback (most recent call last):
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py", line 134, in update_product
+    fs.save(foto.name, foto)
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\files\storage\base.py", line 38, in save
+    name = self._save(name, content)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\files\storage\filesystem.py", line 110, in _save
+    for chunk in content.chunks():
+  File "D:\GB\Progr\ProjectDjango\venv\Lib\site-packages\django\core\files\base.py", line 60, in chunks
+    data = self.read(chunk_size)
+           ^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied
+"POST /product_up/25 HTTP/1.1" 500 81672
+"POST /product_up/25 HTTP/1.1" 200 1486
+"POST /product_up/25 HTTP/1.1" 200 1486
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1486
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1486
+Watching for file changes with StatReloader
+Not Found: /product_up/28
+"GET /product_up/28 HTTP/1.1" 404 3203
+"GET /product_up/27 HTTP/1.1" 200 1484
+"POST /product_up/27 HTTP/1.1" 200 1486
+Watching for file changes with StatReloader
+"GET /product_up/26 HTTP/1.1" 200 1487
+"POST /product_up/26 HTTP/1.1" 200 1499
+"GET /product_up/25 HTTP/1.1" 200 1479
+"POST /product_up/25 HTTP/1.1" 200 1479
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\migrations\0004_product_foto.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1497
+Watching for file changes with StatReloader
+"POST /product_up/25 HTTP/1.1" 200 1497
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeproject\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\GB\Progr\ProjectDjango\Homeworks\storeproject\storeapp\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /product_up/27 HTTP/1.1" 200 1500
+"POST /product_up/27 HTTP/1.1" 200 1500
+"GET /product_up/26 HTTP/1.1" 200 1500
+"POST /product_up/26 HTTP/1.1" 200 1500
+Watching for file changes with StatReloader
+"GET /product_up/27 HTTP/1.1" 200 1506
+"POST /product_up/27 HTTP/1.1" 200 1506
+"POST /product_up/27 HTTP/1.1" 200 1504
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /product_up/27 HTTP/1.1" 200 1476
+"POST /product_up/27 HTTP/1.1" 200 1504
+Watching for file changes with StatReloader
+"POST /product_up/27 HTTP/1.1" 200 1415
+"POST /product_up/27 HTTP/1.1" 200 1504
+Watching for file changes with StatReloader
+"GET /product_up/26 HTTP/1.1" 200 1500
+"POST /product_up/26 HTTP/1.1" 200 1500
+"GET /product_up/27 HTTP/1.1" 200 1488
+"POST /product_up/27 HTTP/1.1" 200 1488
+"GET /product_up/24 HTTP/1.1" 200 1488
+"POST /product_up/24 HTTP/1.1" 200 1488
+Watching for file changes with StatReloader
+"POST /product_up/24 HTTP/1.1" 200 1500
+"POST /product_up/24 HTTP/1.1" 200 1502
